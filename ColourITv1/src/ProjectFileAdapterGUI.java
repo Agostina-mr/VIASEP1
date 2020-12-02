@@ -96,7 +96,7 @@ public class ProjectFileAdapterGUI extends Application
     mainPane.getChildren().add(menuBar);
     mainPane.getChildren().add(tabPane);
 
-    Scene scene = new Scene(mainPane, 512, 390);
+    Scene scene = new Scene(mainPane, 800, 400);
 
     window.setScene(scene);
     window.setResizable(false);

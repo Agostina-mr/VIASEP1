@@ -18,9 +18,9 @@ import javafx.scene.control.CheckMenuItem;
 import javafx.scene.control.ButtonType;
 
 /**
- * A user interface that allows for displaying and modifying information about students.
- * @author Allan Henriksen
- * @version 4.0
+ * A user interface that allows for displaying and modifying information about projects.
+ * @author Luis Fernandez
+ * @version 1.0
  */
 public class ProjectFileAdapterGUI extends Application
 {
@@ -133,7 +133,7 @@ public class ProjectFileAdapterGUI extends Application
         Alert alert = new Alert(AlertType.INFORMATION);
         alert.setHeaderText(null);
         alert.setTitle("About");
-        alert.setContentText("This is just a little program that demonstrates some of the GUI features in Java");
+        alert.setContentText("ColourIT Project Manager.");
         alert.showAndWait();
       }
     }
@@ -150,7 +150,7 @@ public class ProjectFileAdapterGUI extends Application
     {
       if (newTab == projectTab)
       {
-        projectTab.updateProjectListView();
+        projectTab.updateProjectsTable();
       }
     }
   }

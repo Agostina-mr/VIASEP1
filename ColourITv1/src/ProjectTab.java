@@ -137,7 +137,7 @@ public class ProjectTab extends Tab
   /**
    * Updates the studentListView ListView with information from the students file
    */
-  public void updateProjectListView()
+  public void updateProjectsTable()
   {
     int currentIndex = allProjectsTable.getSelectionModel().getSelectedIndex();
 
@@ -182,7 +182,7 @@ public class ProjectTab extends Tab
         Project project = new Project(id, title, description);
 
         adapter.addProject(project);
-        updateProjectListView();
+        updateProjectsTable();
         idField.setText("");
         titleField.setText("");
         descriptionField.setText("");

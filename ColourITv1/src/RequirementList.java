@@ -5,17 +5,28 @@ public class RequirementList implements Serializable
 {
   private ArrayList<Requirement> requirements;
 
+  // Constructors
   public RequirementList()
   {
     requirements = new ArrayList<Requirement>();
   }
 
+  // Size, add and remove
   public int size()
   {
     return requirements.size();
   }
+  public void addRequirement(Requirement requirement)
+  {
+    requirements.add(requirement);
+  }
+  public void removeRequirement(Requirement requirement)
+  {
+    requirements.remove(requirement);
+  }
 
-  // Return the Project object at index if one exists,
+  // Several get methods
+  // Return the Requirement object at index if one exists,
   // else return null
   public Requirement getRequirement(int index)
   {
@@ -27,16 +38,6 @@ public class RequirementList implements Serializable
     {
       return null;
     }
-  }
-
-  public void addRequirement(Requirement requirement)
-  {
-    requirements.add(requirement);
-  }
-
-  public void removeRequirement(Requirement requirement)
-  {
-    requirements.remove(requirement);
   }
 
   public Requirement getRequirementById(String id)
@@ -54,6 +55,7 @@ public class RequirementList implements Serializable
     return requirement;
   }
 
+  // toStrimg
   public String toString()
   {
     String str = "";

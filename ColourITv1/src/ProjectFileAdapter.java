@@ -6,6 +6,7 @@ public class ProjectFileAdapter
   private MyFileIO mfio;
   private String fileName;
 
+  // Constructor
   public ProjectFileAdapter(String fileName)
   {
     mfio = new MyFileIO();
@@ -75,6 +76,7 @@ public class ProjectFileAdapter
     return requirement.getTasks();
   }
 
+  // Add methods
   public void addProject(Project project)
   {
     ProjectList projects = getAllProjects();

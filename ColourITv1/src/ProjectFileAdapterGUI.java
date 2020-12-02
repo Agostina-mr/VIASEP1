@@ -22,6 +22,7 @@ import javafx.scene.control.ButtonType;
  * @author Luis Fernandez
  * @version 1.0
  */
+
 public class ProjectFileAdapterGUI extends Application
 {
   private ProjectFileAdapter adapter;
@@ -105,8 +106,8 @@ public class ProjectFileAdapterGUI extends Application
 
   /*
    * Inner action listener class
-   * @author Allan Henriksen
-   * @version 4.0
+   * @author Luis Fernandez
+   * @version 1.0
    */
   private class MyActionListener implements EventHandler<ActionEvent>
   {

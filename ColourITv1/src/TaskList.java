@@ -5,25 +5,27 @@ public class TaskList implements Serializable
 {
   private ArrayList<Task> tasks;
 
+  // Constructors
   public TaskList()
   {
     tasks = new ArrayList<Task>();
   }
 
+  // Size, add and remove
+  public int size()
+  {
+    return tasks.size();
+  }
   public void addTask(Task task)
   {
     tasks.add(task);
   }
-
   public void removeTask(Task task)
   {
     tasks.remove(task);
   }
 
-  public int size()
-  {
-    return tasks.size();
-  }
+  // Several get methods
   public Task getTaskById(String id)
   {
     Task task = new Task();
@@ -49,5 +51,16 @@ public class TaskList implements Serializable
     {
       return null;
     }
+  }
+
+  // toString
+  public String toString()
+  {
+    String str = "";
+    for (Task t : tasks)
+    {
+      str += t.toString();
+    }
+    return str;
   }
 }

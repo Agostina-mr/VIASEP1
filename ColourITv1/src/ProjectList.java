@@ -3,33 +3,34 @@ import java.util.ArrayList;
 
 public class ProjectList implements Serializable
 {
-  ArrayList<Project> projects;
+  private ArrayList<Project> projects;
+
+  // Constructors
+  public void addProject(int index, Project project)
+  {
+    projects.add(index, project);
+  }
 
   public ProjectList()
   {
     projects = new ArrayList<Project>();
   }
 
-  public void addProject(int index, Project project)
+  // Size, add, and remove
+  public int size()
   {
-    projects.add(index, project);
+    return projects.size();
   }
-
   public void addProject(Project project)
   {
     projects.add(project);
   }
-
   public void removeProject(Project project)
   {
     projects.remove(project);
   }
 
-  public int size()
-  {
-    return projects.size();
-  }
-
+  // Several get methods
   public Project getProject(int index)
   {
     if(index<projects.size())
@@ -56,6 +57,7 @@ public class ProjectList implements Serializable
     return project;
   }
 
+  // toString
   public String toString()
   {
     String returnStr = "";

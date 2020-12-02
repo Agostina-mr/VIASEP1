@@ -7,6 +7,7 @@ public class Task implements Serializable
   private Date deadline;
   private Employee teamMember;
 
+  // Constructors
   public Task(String requirementId, String id, String description, Date deadline)
   {
     this.requirementId = requirementId;
@@ -20,11 +21,13 @@ public class Task implements Serializable
 
   }
 
+  // Getters
   public String getId()
   {
     return id;
   }
 
+  // toString
   public String toString()
   {
     String str = "-----------------------";

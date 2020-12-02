@@ -135,7 +135,7 @@ public class ProjectTab extends Tab
 
 
   /**
-   * Updates the studentListView ListView with information from the students file
+   * Updates the allProjectsTable with information from the projects file
    */
   public void updateProjectsTable()
   {
@@ -191,7 +191,7 @@ public class ProjectTab extends Tab
   }
 
   /*
-   * Inner change listener class for the ListView
+   * Inner change listener class for the allProjectsTable
    * @author Luis Fernandez
    * @version 1.0
    */

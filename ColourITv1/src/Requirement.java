@@ -8,10 +8,7 @@ public class Requirement implements Serializable
   private Employee teamMember;
   private TaskList tasks;
 
-  public Requirement()
-  {
-  }
-
+  // Constructors
   public Requirement(String projectId, String id, String description, Date deadline)
   {
     this.projectId = projectId;
@@ -21,11 +18,31 @@ public class Requirement implements Serializable
     tasks = new TaskList();
   }
 
+  public Requirement()
+  {
+  }
+
+  // Getters
   public String getId()
   {
     return id;
   }
+  public TaskList getTasks()
+  {
+    return tasks;
+  }
 
+  // Setters
+  public void setDeadline(Date deadline)
+  {
+    this.deadline = deadline;
+  }
+  public void setTasks(TaskList tasks)
+  {
+    this.tasks = tasks;
+  }
+
+  // toString
   public String toString()
   {
     String str = "-----------------------";
@@ -34,20 +51,5 @@ public class Requirement implements Serializable
         + description + "\nDeadline: " + deadline
         + "\nTeam Member: " + teamMember + "\nTotal Hours: " + totalHours
         + "\nTime Estimate: " + timeEstimate + "\nProject id: " + projectId + "\n";
-  }
-
-  public void setDeadline(Date deadline)
-  {
-    this.deadline = deadline;
-  }
-
-  public TaskList getTasks()
-  {
-    return tasks;
-  }
-
-  public void setTasks(TaskList tasks)
-  {
-    this.tasks = tasks;
   }
 }

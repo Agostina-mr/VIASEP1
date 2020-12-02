@@ -2,6 +2,9 @@ public class ColourIT
 {
   public static void main(String[] args)
   {
+    // This class is only used to load data into the file. If you run this in your
+    // system, remember to change the file path in the file variable.
+
     String file = "C:\\Users\\lfpon\\OneDrive - ViaUC\\sdj\\lesson25\\Car\\projects.bin";
     ProjectFileAdapter pfa = new ProjectFileAdapter(
         file);
